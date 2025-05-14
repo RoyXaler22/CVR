@@ -10,7 +10,7 @@ import java.sql.SQLException;
 public class ConnectionClass {
 
     static String classes =  "net.sourceforge.jtds.jdbc.Driver";
-    protected static String ip = "10.252.9.37";  //10.253.6.65 192.168.18.153
+    protected static String ip = "10.252.9.37";  //  <---- Cambiar la IP
     protected static String port = "1433";
     protected static String db = "BD_CVR";
     protected static String un = "admin_bd";
