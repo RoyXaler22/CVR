@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ventanas.IngresarProductos">
+
+    <TextView
+        android:id="@+id/lbIngresoProducto"
+        android:layout_width="222dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="24dp"
+        android:text="Producto"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilyPrecioProducto"
+        android:layout_width="160dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        app:boxBackgroundMode="filled"
+        app:boxStrokeColor="#d79830"
+        app:cursorColor="#434343"
+        app:endIconMode="clear_text"
+        app:endIconTint="#FFC107"
+        app:errorEnabled="true"
+        app:hintTextColor="#FFC107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilyDescripcionProducto"
+        app:placeholderTextColor="#FFC107"
+        app:startIconDrawable="@drawable/baseline_price_check_24"
+        app:startIconTint="#FFC107">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEditPrecioProducto"
+            android:layout_width="150dp"
+            android:layout_height="56dp"
+            android:hint="Precio"
+            android:inputType="number|numberDecimal"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/lbDatos"
+        android:layout_width="222dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="88dp"
+        android:text="DATOS"
+        android:textAlignment="center"
+        android:textColor="@color/gold"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,TextSizeCheck,TextContrastCheck" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilyCodigoProducto"
+        android:layout_width="0dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="152dp"
+        app:boxBackgroundMode="filled"
+        app:boxStrokeColor="#d79830"
+        app:cursorColor="#434343"
+        app:endIconMode="clear_text"
+        app:endIconTint="#FFC107"
+        app:errorEnabled="true"
+        app:hintTextColor="#FFC107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:placeholderTextColor="#FFC107"
+        app:startIconDrawable="@drawable/baseline_code_24"
+        app:startIconTint="#FFC107">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEditCodigoProducto"
+            android:layout_width="220dp"
+            android:layout_height="56dp"
+            android:hint="Codigo"
+            android:inputType="number"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/btnQRProducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/transparente"
+        android:onClick="BTN_QR_PRODUCTO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tilyCodigoProducto"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btn_img_qr"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilyDescripcionProducto"
+        android:layout_width="340dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        app:boxBackgroundMode="filled"
+        app:boxStrokeColor="#d79830"
+        app:cursorColor="#434343"
+        app:endIconMode="clear_text"
+        app:endIconTint="#FFC107"
+        app:errorEnabled="true"
+        app:hintTextColor="#FFC107"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilyCodigoProducto"
+        app:placeholderTextColor="#FFC107"
+        app:startIconDrawable="@drawable/baseline_description_24"
+        app:startIconTint="#FFC107">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEditDescripcionProducto"
+            android:layout_width="330dp"
+            android:layout_height="56dp"
+            android:hint="Descripcion"
+            android:inputType="text|textPersonName"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilyCantProducto"
+        android:layout_width="160dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        app:boxBackgroundMode="filled"
+        app:boxStrokeColor="#d79830"
+        app:cursorColor="#434343"
+        app:endIconMode="clear_text"
+        app:endIconTint="#FFC107"
+        app:errorEnabled="true"
+        app:hintTextColor="#FFC107"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tilyPrecioProducto"
+        app:layout_constraintTop_toBottomOf="@+id/tilyDescripcionProducto"
+        app:placeholderTextColor="#FFC107"
+        app:startIconDrawable="@drawable/baseline_add_to_photos_24"
+        app:startIconTint="#FFC107">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEditCantProducto"
+            android:layout_width="150dp"
+            android:layout_height="56dp"
+            android:hint="Cant."
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/lbDescripcionProveedor"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="444dp"
+        android:text="Proveedor"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/btnCargarProducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparente"
+        android:onClick="BTN_CARGAR_PRODUCTO"
+        app:layout_constraintBottom_toTopOf="@+id/lyIngresoProducto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbDescripcionProveedor"
+        app:layout_constraintVertical_bias="0.479"
+        app:srcCompat="@drawable/btn_img_cargar_producto"
+        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lyIngresoProducto"
+        android:layout_width="360dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="21dp"
+        android:background="@drawable/bordes_circulares"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="VisualLintBounds">
+
+        <TextView
+            android:id="@+id/lbIngresoProductoIB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Proveedores - Producto"
+            android:textColor="@color/gold"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgPIngresoProductoBar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.524"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/imgPIngresoProductoBar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="22dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.65"
+            app:srcCompat="@drawable/proveedor"
+            tools:ignore="ContentDescription" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

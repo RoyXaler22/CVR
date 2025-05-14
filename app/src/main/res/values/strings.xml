@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Aplicacion_CVR</string>
+    <string name="organiza_tu_vida_simplifica_tu_dia" translatable="false">Organiza tu vida, Simplifica tu dia</string>
+    <string name="cvr" translatable="false">CVR</string>
+    <string name="proveedor" translatable="false">Proveedor</string>
+    <string name="registros" translatable="false">Registros</string>
+    <string name="buenos_dias_nusuario" translatable="false">Buen Dia,\nUsuario</string>
+</resources>

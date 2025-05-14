@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ventanas.Login">
+
+    <ImageView
+        android:id="@+id/imgFondo_4"
+        android:layout_width="123dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="153dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/tilyContrasena"
+        app:srcCompat="@drawable/inicio_fondo_2"
+        tools:ignore="ContentDescription,ImageContrastCheck,VisualLintBounds" />
+
+    <ImageView
+        android:id="@+id/imgFondo_5"
+        android:layout_width="133dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/lbTitulo_2"
+        app:layout_constraintStart_toStartOf="@+id/imgUsuario"
+        app:srcCompat="@drawable/inicio_fondo_3"
+        tools:ignore="ContentDescription,ImageContrastCheck,VisualLintBounds" />
+
+    <ImageView
+        android:id="@+id/imgFondo_6"
+        android:layout_width="123dp"
+        android:layout_height="154dp"
+        android:layout_marginStart="340dp"
+        android:layout_marginTop="116dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilyContrasena"
+        app:srcCompat="@drawable/inicio_fondo_1"
+        tools:ignore="ContentDescription,ImageContrastCheck,VisualLintBounds" />
+
+    <ImageButton
+        android:id="@+id/btnLogin"
+        android:layout_width="51dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="45dp"
+        android:background="#00FFFFFF"
+        android:onClick="BTN_LOGIN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilyContrasena"
+        app:srcCompat="@drawable/btn_img_login"
+        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck,UnknownId" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilyUsuario"
+        android:layout_width="283dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginEnd="30dp"
+        app:boxBackgroundMode="filled"
+        app:boxStrokeColor="#d79830"
+        app:cursorColor="#434343"
+        app:endIconMode="clear_text"
+        app:endIconTint="#FFC107"
+        app:hintTextColor="#FFC107"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:placeholderTextColor="#FFC107"
+        app:startIconDrawable="@drawable/baseline_assignment_ind_24"
+        app:startIconTint="#FFC107">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEditUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Usuario"
+            android:inputType="text|textPersonName"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilyContrasena"
+        android:layout_width="283dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginEnd="30dp"
+        app:boxBackgroundMode="filled"
+        app:boxStrokeColor="#d79830"
+        app:cursorColor="#434343"
+        app:endIconMode="password_toggle"
+        app:endIconTint="#FFC107"
+        app:hintTextColor="#FFC107"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:placeholderTextColor="#FFC107"
+        app:startIconDrawable="@android:drawable/ic_lock_lock"
+        app:startIconTint="#FFC107">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEditContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:imeOptions="actionDone"
+            android:inputType="text|textPassword"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/lbDescripcion_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="312dp"
+        android:text="Inicia sesión para continuar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/lbTitulo_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="268dp"
+        android:text="Bienvenido"
+        android:textColor="#49454F"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imgUsuario"
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/usuario_login"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

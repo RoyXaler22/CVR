@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gold">#FFC107</color>
+    <color name="gold_palido">#81FDFDF5</color>
+    <color name="plomo">#333232</color>
+    <color name="bone">#f5eded</color>
+    <color name="transparente">#00F5EDED</color>
+    <color name="fondo">#FFFEFF</color>
+    <color name="color_texto">#363636</color>
+    <color name="dark">#121116</color>
+    <color name="light">#FDF5FD</color>
+
+</resources>

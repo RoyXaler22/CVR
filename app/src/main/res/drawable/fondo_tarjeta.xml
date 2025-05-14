@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/gold"/> <!-- Color de relleno, puede ser transparente -->
+    <stroke
+        android:width="3dp"
+        android:color="@color/transparente"
+        />
+    <corners android:topLeftRadius="20dp"
+        android:topRightRadius="20dp"
+        android:bottomLeftRadius="20dp"
+        android:bottomRightRadius="20dp"/> <!-- Ajusta el radio según sea necesario para hacer el borde circular -->
+</shape>
